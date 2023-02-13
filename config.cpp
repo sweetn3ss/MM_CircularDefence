@@ -11,6 +11,12 @@ class CfgPatches
 		magazines[]={};
 		ammo[]={};
 		requiredVersion=0.1;
+		authors[] = {
+		"Mesa",
+		"Saint",
+		"Cromer",
+		"Outshadow"
+		};
 	};
 };
 class Extended_PostInit_EventHandlers {
