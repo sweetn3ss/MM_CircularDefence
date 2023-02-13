@@ -117,7 +117,7 @@ class cfgVehicles {
 		scopeCurator=2;
 		armor=999999;
 		armorStructural=999;
-		displayName="Bubble Shield";
+		displayName="[82ndSOC] Bubble Shield";
 		model="\MM_CircularDefence\data\bubble\bubbledeployed.p3d";
 		author="Saint";
 		editorCategory="82nd_Battalion";
