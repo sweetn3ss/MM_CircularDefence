@@ -4,12 +4,12 @@ params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projecti
 [
     {
         params ["_projectile"];
-	private _posChance = 99 - (lmaoprob);
-	private _lmaoChance = selectRandomWeighted [2,1,1,lmaoprob,0,_posChance];
-	private _timer = 0 + bubbleCock;
+	private _posChance = 99 - (lemowprob);
+	private _lmaoChance = selectRandomWeighted [2,1,1,lemowprob,0,_posChance];
+	private _timer = 0 + bubbleClock;
 	
 	if (_lmaoChance == 0) then {
-        private _bubble = createVehicle ["82nd_Bubble_Shield", (getPosATL _projectile), [], 0, "CAN_COLLIDE"];
+        private _bubble = createVehicle ["MM_Bubble_Shield", (getPosATL _projectile), [], 0, "CAN_COLLIDE"];
         deleteVehicle _projectile;
 			[
 				{
@@ -22,7 +22,7 @@ params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projecti
 			] call CBA_fnc_waitAndExecute;
 	};
 	if (_lmaoChance == 1) then {
-		private _bubble = createVehicle ["82nd_Bubble_Shield", (getPosATL _projectile), [], 0, "CAN_COLLIDE"];
+		private _bubble = createVehicle ["MM_Bubble_Shield", (getPosATL _projectile), [], 0, "CAN_COLLIDE"];
 		private _bubblePos = getposATL _bubble;
         deleteVehicle _projectile;
 
@@ -45,7 +45,7 @@ params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projecti
 			] call CBA_fnc_waitAndExecute;
 		};
 	if (_lmaoChance == 2) then {
-		private _bubble = createVehicle ["82nd_Bubble_Shield", (getPosATL _projectile), [], 0, "CAN_COLLIDE"];
+		private _bubble = createVehicle ["MM_Bubble_Shield", (getPosATL _projectile), [], 0, "CAN_COLLIDE"];
 		private _bubblePos = getposATL _bubble;
         deleteVehicle _projectile;
 
