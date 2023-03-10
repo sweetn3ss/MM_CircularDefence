@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class MM_CircularDefence {
+	class 82nd_Yeeter {
 		name="82ndSOC Yeeter";
 		requiredAddons[]= {
 			"OPTRE_Weapons",
@@ -21,11 +21,11 @@ class Extended_PostInit_EventHandlers {
 class cfgFunctions {
 	class esThrow {
 		class functions {
-			file="MM_CircularDefence\functions";
+			file="82nd_Yeeter\functions";
 			class bubbleshield_throw {};
 		};
 		class Keys {
-			file="\MM_CircularDefence\functions";
+			file="\82nd_Yeeter\functions";
 			class MesaYeeter_Key {};
 		};
 	};
@@ -37,10 +37,10 @@ class cfgAmmo {
 		indirectHit=0;
 		indirectHitRange=0;
 		defaultMagazine="82nd_Bubble_Mag";
-		model="\MM_CircularDefence\data\bubble\bubbleprojectile.p3d";
+		model="\82nd_Yeeter\data\bubble\bubbleprojectile.p3d";
 		explosive=0;
 		explosionType="";
-		mineModelDisabled="\MM_CircularDefence\data\bubble\bubbleprojectile.p3d";
+		mineModelDisabled="\82nd_Yeeter\data\bubble\bubbleprojectile.p3d";
 		triggerWhenDestroyed=0;
 		explosionEffects="";
 		CraterEffects="";
@@ -72,7 +72,7 @@ class cfgMagazines {
 	class 82nd_Bubble_Mag : OPTRE_M9_Frag {
 		scope=2;
 		scopeArsenal=2;
-		displayName="Z-4190 TPE/SS";
+		displayName="[82ndSOC] Z-4190 TPE/SS";
 		displayNameShort="Throwable Bubble Shield";
 		descriptionShort="Throwable Bubble Shield";
 		type="256";
@@ -118,7 +118,7 @@ class cfgVehicles {
 		armor=999999;
 		armorStructural=999;
 		displayName="[82ndSOC] Bubble Shield";
-		model="\MM_CircularDefence\data\bubble\bubbledeployed.p3d";
+		model="\82nd_Yeeter\data\bubble\bubbledeployed.p3d";
 		author="Saint";
 		editorCategory="82nd_Battalion";
 		editorSubcategory="82nd_Props";
